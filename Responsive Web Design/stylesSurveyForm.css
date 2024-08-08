@@ -1,0 +1,84 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color: aliceblue;
+    font: 20px GARAMOND;
+    background-color: #164356;
+}
+
+h1 {
+    font: bold 35px;
+}
+
+h1,
+p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+
+p {
+    font-size: 20px;
+}
+
+form {
+    width: 80vw;
+    max-width: 700px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid #669cb3;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+#submit {
+    background-color: #113241;
+    border: none;
+    color: aliceblue;
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    min-width: 300px;
+}
+label{
+    display: block;
+    width: 100%;
+    min-width: 500px;
+    font-size: 20px;
+    margin: 5px auto;
+}
+.Data{
+    width: 100%;
+    min-width: 300px;
+    max-width: 700px;
+    margin: 1em auto;
+    height: 2em;   
+
+}
+.lists{
+    display: block;
+    width: 100%;
+    min-width: 500px;
+    font-size: 18px;
+    margin: 5px auto;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    height: 5em;
+    margin: 10px auto;
+    font: 16px GARAMOND;
+
+}

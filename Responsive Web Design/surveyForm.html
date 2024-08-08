@@ -1,4 +1,3 @@
-
 <!-- Build a Survey Form
 Discription:
 Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks. Do not copy this demo project.
@@ -26,3 +25,76 @@ Fulfill the user stories and pass all the tests below to complete this project. 
 Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS
 
 Solution: -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesSurveyForm.css">
+    <title>Survey form</title>
+</head>
+
+<body>
+    <h1 id="title">Restaurant "Benjamin" Survey Form</h1>
+    <p id="description">Thank you for helping us to improve the quality of service!</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required
+                    class="Data" /></label>
+            <label id="email-label">Email </label><input id="email" type="email" placeholder="Enter your email" required
+                class="Data" /></label>
+            <label id="number-label">Order number </label><input id="number" type="number" min="1" max="100"
+                placeholder="Enter your order number" required class="Data" /></label>
+            <label id="age-group">What is your age group?</label>
+            <label for="age-group1" class="lists"><input id="age-group1" name="age-group" value="1"
+                    type="radio" />18-24</label>
+            <label for="age-group2" class="lists"><input id="age-group" name="age-group2" value="2"
+                    type="radio" />25-40</label>
+            <label for="age-group3" class="lists"><input id="age-group" name="age-group3" value="3"
+                    type="radio" />41-60</label>
+            <label for="age-group4" class="lists"><input id="age-group" name="age-group" value="4"
+                    type="radio" />Other</label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">Where is the restaurant located?
+                <select id="dropdown">
+                    <option value="0">(select one)</option>
+                    <option value="1">Warsaw</option>
+                    <option value="2">Minsk</option>
+                </select>
+            </label>
+            <label for="company" class="lists">What is your company for today?</label>
+            <label for="company1" class="lists"><input id="company" name="company" value="1" type="radio">I came in the
+                company of myself</label>
+            <label for="company2" class="lists"><input id="company" name="company" value="2" type="radio">I came in the
+                company of
+                friends</input></label>
+            <label for="company3" class="lists"><input id="company" name="company" value="3" type="radio">I came in the
+                company of my
+                girlfriend/boyfriend(spouse)</label>
+
+        </fieldset>
+        <fieldset>
+            <label for="like" class="lists">What did you enjoy most about our restaurant?</label>
+            <label for="like1" class="lists"><input id="like" name="like" value="1" type="checkbox" />Food</label>
+            <label for="like2" class="lists"><input id="like" name="like" value="1" type="checkbox" />Serving
+                food</label>
+            <label for="like3" class="lists"><input id="like" name="like" value="1" type="checkbox" />Service</label>
+            <label for="like4" class="lists"><input id="like" name="like" value="1" type="checkbox" />Restaurant
+                interior</label>
+            <label for="like5" class="lists"><input id="like" name="like" value="1" type="checkbox" />Restaurant
+                location</label>
+            </label>
+            <label for="comments">Do you want to add something else?
+                <textarea name="comments" id="comments" placeholder="Leave your comment here"></textarea></label>
+
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit" />
+
+    </form>
+
+</body>
+
+</html>
